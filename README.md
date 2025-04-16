@@ -7,7 +7,7 @@ Name: Leontieva Mariia, 馬莉亞<br>
 ### Introduction
 
 In this assignment, we aim to solve digit recognition problem using a Faster R-CNN network, using the [dataset](https://drive.google.com/file/d/1fx4Z6xl5b6r4UFkBrn5l0oPEIagZxQ5u/view?usp=drive_link) that contains 30,062 images for Training, 3,340 for Validation and 13,068 images for Test.<br>
-The bounding boxes inside dataset are specified in the COCO format:<br> “bbox”: [xmin, ymin, w, w]<br>
+The bounding boxes inside dataset are specified in the COCO format:<br> “bbox”: [xmin, ymin, w, h]<br>
 To solve this problem, I chose a Faster R-CNN model with a Resnet-50 backbone and pre-trained weights.<br>
 
 
