@@ -12,21 +12,20 @@ To solve this problem, I chose a Faster R-CNN model with a Resnet-50 backbone an
 
 
 ## Results
-Results without data augmentation:<br>
+The best results were yielded by using SGD with LR=1e-3.<br>
 
-Learning curve after 20 epochs with LR = 0.0001<br>
-![curve1](https://github.com/user-attachments/assets/92639943-a063-4a75-9dc1-ff5ce6ec1791)<br>
-Confusion matrix<br>
-![Confusion_matrix_1](https://github.com/user-attachments/assets/1e14b4bf-f9fe-4f75-8117-4f7131c33b02)<br>
+Learning curves after 55 epochs with SGD with LR=1e-3<br>
 
-Results with data augmentation<br>
-Learning curve after 20 epochs with LR = 0.0001<br>
-![curve2](https://github.com/user-attachments/assets/2d3b6cf8-b5be-49d7-b551-222615d9f873)<br>
-Confusion matrix<br>
-![Confusion_matrix2](https://github.com/user-attachments/assets/1a389d9f-2bd6-44eb-97bd-68e511b2b8eb)<br>
+![train_loss_plot (2)](https://github.com/user-attachments/assets/73d05c72-ad9b-4791-99b1-54871b802bb6)
+
+![valid_loss_plot (2)](https://github.com/user-attachments/assets/c28cdf1a-bc5b-468d-b989-c2ddcc5ccc53)
+
 
 ## Performance
-Performance was evaluated only without data augmentation, due to competition closing early.<br>
-<img width="902" alt="image" src="https://github.com/user-attachments/assets/873dde7a-9f8c-430e-a835-e428405e4169" />
+Performance was evaluated using CodaBench competition.<br>
+According to the results of experiments, the best threshold for prediction during the test stage is 0.7 or 0.75.
+
+<img width="866" alt="CodaBench" src="https://github.com/user-attachments/assets/27c03289-f74b-45e0-bb3a-f8f9f16a9ca5" />
+
 
 
